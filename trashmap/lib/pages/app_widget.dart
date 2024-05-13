@@ -1,8 +1,8 @@
-import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:page_transition/page_transition.dart';
+import 'package:trashmapteste/pages/first_page.dart';
 import 'package:trashmapteste/pages/home_page.dart';
 import 'package:trashmapteste/pages/login_page.dart';
+import 'package:trashmapteste/pages/register_page.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({super.key});
@@ -11,9 +11,11 @@ class AppWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: '/login',
+      initialRoute: '/firstPage',
       routes: {
+        '/firstPage': (context) => const firstPage(),
         '/login': (context) => const LoginPage(),
+        '/register':(context) => const RegisterPage(),
         '/home': (context) => const HomePage(),
       },
     );

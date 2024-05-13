@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "trashmapteste",
+            "name": "trashmap",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "trashmapteste (profile mode)",
+            "name": "trashmap (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "trashmapteste (release mode)",
+            "name": "trashmap (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"

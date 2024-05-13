@@ -26,7 +26,6 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: SizedBox(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
@@ -43,13 +42,14 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 20),
                 SizedBox(
                   width: 325,
-                  child: TextField(
+                  child: TextField(  
                     keyboardType: TextInputType.emailAddress,
                     textInputAction: TextInputAction.next,
                     controller: emailController,
                     decoration: InputDecoration(
                       labelText: 'Email',
                       border: OutlineInputBorder(
+                        borderSide: BorderSide(color: Color(0xFFFF5900)),
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
@@ -94,13 +94,6 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                     ),
                   ),
-                ),
-                const SizedBox(height: 10),
-                GestureDetector(
-                  child: const Text('Criar conta'),
-                  onTap: () {
-                    Navigator.pushNamed(context, '/register');
-                  },
                 ),
               ],
             ),
